@@ -5,7 +5,7 @@ import path from "path";
 export const captchaImg = async ( {body}, res = response) => {
 
 
-res.send('holii');
+res.send(body);
 
 
 //     const {text, width, height} = body
