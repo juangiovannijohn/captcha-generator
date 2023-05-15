@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use('/',captchaRouter);
+app.use('/api',captchaRouter);
 app.get('/', (req, res)=>{
   res.send('Bienvenido ! te invito a "/generate-img"');
 })
